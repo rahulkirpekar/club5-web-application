@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>club5-web-application</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  	<servlet>
+  		<servlet-name>xyz</servlet-name>
+  		<servlet-class>com.royal.controller.FirstServlet</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>xyz</servlet-name>
+		<url-pattern>/abc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+  		<servlet-name>SecondServlet</servlet-name>
+  		<servlet-class>com.royal.controller.SecondServlet</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecondServlet</servlet-name>
+		<url-pattern>/secondServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+  		<servlet-name>InsertStudentServlet</servlet-name>
+  		<servlet-class>com.royal.controller.InsertStudentServlet</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertStudentServlet</servlet-name>
+		<url-pattern>/insertStudentServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+  		<servlet-name>ListStudentServlet</servlet-name>
+  		<servlet-class>com.royal.controller.ListStudentServlet</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListStudentServlet</servlet-name>
+		<url-pattern>/listStudentServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+</web-app>
