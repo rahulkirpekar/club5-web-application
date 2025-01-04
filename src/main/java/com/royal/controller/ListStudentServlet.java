@@ -46,7 +46,7 @@ public class ListStudentServlet extends HttpServlet
 			out.print("		<td>"+s.getName()+"</td>   ");
 			out.print("		<td>"+s.getStd()+"</td>    ");
 			out.print("		<td>"+s.getMarks()+"</td>  ");
-			out.print("		<td><a href='#'>EDIT</a> | <a href='#'>DELETE</a> </td>  ");
+			out.print("		<td><a href='editStudentServlet?rno="+s.getRno()+"'>EDIT</a> | <a href='deleteStudentServlet?rno="+s.getRno()+"'>DELETE</a> </td>  ");
 			out.print("	</tr>               ");
 			
 		}

@@ -9,43 +9,66 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  
-  	<servlet>
-  		<servlet-name>xyz</servlet-name>
-  		<servlet-class>com.royal.controller.FirstServlet</servlet-class>
-  	</servlet>
-	<servlet-mapping>
-		<servlet-name>xyz</servlet-name>
-		<url-pattern>/abc</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-  		<servlet-name>SecondServlet</servlet-name>
-  		<servlet-class>com.royal.controller.SecondServlet</servlet-class>
-  	</servlet>
-	<servlet-mapping>
-		<servlet-name>SecondServlet</servlet-name>
-		<url-pattern>/secondServlet</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-  		<servlet-name>InsertStudentServlet</servlet-name>
-  		<servlet-class>com.royal.controller.InsertStudentServlet</servlet-class>
-  	</servlet>
-	<servlet-mapping>
-		<servlet-name>InsertStudentServlet</servlet-name>
-		<url-pattern>/insertStudentServlet</url-pattern>
-	</servlet-mapping>
-	
-		<servlet>
-  		<servlet-name>ListStudentServlet</servlet-name>
-  		<servlet-class>com.royal.controller.ListStudentServlet</servlet-class>
-  	</servlet>
-	<servlet-mapping>
-		<servlet-name>ListStudentServlet</servlet-name>
-		<url-pattern>/listStudentServlet</url-pattern>
-	</servlet-mapping>
-	
-	
-	
+  <servlet>
+    <servlet-name>xyz</servlet-name>
+    <servlet-class>com.royal.controller.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>xyz</servlet-name>
+    <url-pattern>/abc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.royal.controller.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/secondServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>InsertStudentServlet</servlet-name>
+    <servlet-class>com.royal.controller.InsertStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertStudentServlet</servlet-name>
+    <url-pattern>/insertStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListStudentServlet</servlet-name>
+    <servlet-class>com.royal.controller.ListStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListStudentServlet</servlet-name>
+    <url-pattern>/listStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteStudentServlet</display-name>
+    <servlet-name>DeleteStudentServlet</servlet-name>
+    <servlet-class>com.royal.controller.DeleteStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteStudentServlet</servlet-name>
+    <url-pattern>/deleteStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditStudentServlet</display-name>
+    <servlet-name>EditStudentServlet</servlet-name>
+    <servlet-class>com.royal.controller.EditStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditStudentServlet</servlet-name>
+    <url-pattern>/editStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateStudentServlet</display-name>
+    <servlet-name>UpdateStudentServlet</servlet-name>
+    <servlet-class>com.royal.controller.UpdateStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudentServlet</servlet-name>
+    <url-pattern>/updateStudentServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
