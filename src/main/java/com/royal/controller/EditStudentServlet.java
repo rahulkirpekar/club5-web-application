@@ -31,35 +31,11 @@ public class EditStudentServlet extends HttpServlet
 
 		if (obj instanceof StudentBean) 
 		{
-			StudentBean s = (StudentBean)obj;
+			StudentBean sbean = (StudentBean)obj;
 					
-			out.print("<h3>Student Registration Page</h3>                       ");
-			out.print("<form action='updateStudentServlet' method='post'>       ");
-			out.print("	<table>                                                 ");
-			out.print("		<tr>                                                ");
-			out.print("			<td>Rno </td>                                  ");
-			out.print("			<td><input type='text' name='rno' value="+s.getRno()+" readonly> </td>       ");
-			out.print("		</tr>                                               ");
-
-			out.print("		<tr>                                                ");
-			out.print("			<td>Name </td>                                  ");
-			out.print("			<td><input type='text' name='name' value="+s.getName()+"> </td>       ");
-			out.print("		</tr>                                               ");
-			out.print("		<tr>                                                ");
-			out.print("			<td>Std</td>                                    ");
-			out.print("			<td><input type='text' name='std' value="+s.getStd()+"> </td>        ");
-			out.print("		</tr>                                               ");
-			out.print("		<tr>                                                ");
-			out.print("			<td>Marks</td>                                  ");
-			out.print("			<td><input type='text' name='marks' value="+s.getMarks()+"> </td>      ");
-			out.print("		</tr>                                               ");
-			out.print("		<tr>                                                ");
-			out.print("			<td></td>                                       ");
-			out.print("			<td><input type='submit'> </td>                 ");
-			out.print("		</tr>                                               ");
-			out.print("	</table>                                                ");
-			out.print("</form>													");
+			request.setAttribute("sbean", sbean);
 					
+			request.getRequestDispatcher("editstudent.jsp").forward(request, response);
 		} else 
 		{
 			request.getRequestDispatcher("registration.html").forward(request, response);

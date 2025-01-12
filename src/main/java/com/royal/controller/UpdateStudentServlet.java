@@ -41,7 +41,7 @@ public class UpdateStudentServlet extends HttpServlet {
 			
 		} else 
 		{
-				request.setAttribute("rno", rno);
+			request.setAttribute("rno", rno);
 			 rd = request.getRequestDispatcher("editStudentServlet");
 		}
 		rd.forward(request, response);

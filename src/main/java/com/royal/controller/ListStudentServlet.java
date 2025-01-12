@@ -21,35 +21,13 @@ public class ListStudentServlet extends HttpServlet
 
 		PrintWriter out = response.getWriter();
 		
-		out.print("<h3>Student Record Page</h3>");
-		
-		out.print("<table border='1'>              ");
-		out.print("	<tr>                ");
-		out.print("		<td>Rno</td>    ");
-		out.print("		<td>Name</td>   ");
-		out.print("		<td>Std</td>    ");
-		out.print("		<td>Marks</td>  ");
-		out.print("		<td>Action</td>  ");
-		
-		out.print("	</tr>               ");
-
 		StudentDao dao = new StudentDao();
 		
 		ArrayList<StudentBean> list = dao.getAllRecords();
 		
-		for(int i = 0 ; i < list.size() ; i++) 
-		{
-			StudentBean s = list.get(i);
-			
-			out.print("	<tr>                ");
-			out.print("		<td>"+s.getRno()+"</td>    ");
-			out.print("		<td>"+s.getName()+"</td>   ");
-			out.print("		<td>"+s.getStd()+"</td>    ");
-			out.print("		<td>"+s.getMarks()+"</td>  ");
-			out.print("		<td><a href='editStudentServlet?rno="+s.getRno()+"'>EDIT</a> | <a href='deleteStudentServlet?rno="+s.getRno()+"'>DELETE</a> </td>  ");
-			out.print("	</tr>               ");
-			
-		}
-		out.print("</table>				");
+		request.setAttribute("list", list);
+
+		request.getRequestDispatcher("liststudent.jsp").forward(request, response);
+		
 	}
 }
