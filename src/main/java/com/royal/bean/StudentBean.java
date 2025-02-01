@@ -2,25 +2,24 @@ package com.royal.bean;
 
 public class StudentBean 
 {
-	private int rno;
+	private Integer rno;
 	private String name;
-	private int std;
-	private int marks;
+	private Integer std;
+	private Integer marks;
 	
-	public StudentBean() 
-	{
+	public StudentBean() {
 	}
-	public StudentBean(int rno, String name, int std, int marks) 
-	{
+	
+	public StudentBean(Integer rno, String name, Integer std, Integer marks) {
 		this.rno = rno;
 		this.name = name;
 		this.std = std;
 		this.marks = marks;
 	}
-	public int getRno() {
+	public Integer getRno() {
 		return rno;
 	}
-	public void setRno(int rno) {
+	public void setRno(Integer rno) {
 		this.rno = rno;
 	}
 	public String getName() {
@@ -29,16 +28,18 @@ public class StudentBean
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getStd() {
+	public Integer getStd() {
 		return std;
 	}
-	public void setStd(int std) {
+	public void setStd(Integer std) {
 		this.std = std;
 	}
-	public int getMarks() {
+	public Integer getMarks() {
 		return marks;
 	}
-	public void setMarks(int marks) {
+	public void setMarks(Integer marks) {
 		this.marks = marks;
 	}
+	
+	
 }
