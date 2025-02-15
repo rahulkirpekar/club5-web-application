@@ -7,7 +7,8 @@ public class StudentBean
 	private Integer std;
 	private Integer marks;
 	
-	public StudentBean() {
+	public StudentBean() 
+	{
 	}
 	
 	public StudentBean(Integer rno, String name, Integer std, Integer marks) {

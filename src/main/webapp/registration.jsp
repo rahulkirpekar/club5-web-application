@@ -1,10 +1,21 @@
 <!DOCTYPE html>
+<%@page import="com.royal.bean.UserBean"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Student Registration</title>
 </head>
 <body>
+<%
+	UserBean userBean = (UserBean)session.getAttribute("userBean");
+	if(userBean == null)
+	{
+		response.sendRedirect("login.jsp");
+	}
+
+%>
+
 	<h3>Student Registration Page</h3>
 	<form action="insertStudentServlet" method="post">
 		<table>
