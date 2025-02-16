@@ -91,4 +91,34 @@
     <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/LogoutServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CookieServlet</display-name>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>com.royal.controller.CookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieServlet</servlet-name>
+    <url-pattern>/CookieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RetrieveCookieServlet</display-name>
+    <servlet-name>RetrieveCookieServlet</servlet-name>
+    <servlet-class>com.royal.controller.RetrieveCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RetrieveCookieServlet</servlet-name>
+    <url-pattern>/RetrieveCookieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutByCookieServle</display-name>
+    <servlet-name>LogoutByCookieServle</servlet-name>
+    <servlet-class>com.royal.controller.LogoutByCookieServle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutByCookieServle</servlet-name>
+    <url-pattern>/LogoutByCookieServle</url-pattern>
+  </servlet-mapping>
 </web-app>
