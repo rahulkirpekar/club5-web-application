@@ -1,0 +1,54 @@
+4-ways Session Tracking
+-------------------------
+1) HttpSession---Done
+----------------------
+
+	session
+	   |
+	   --jSessionId---14long value--store--client browser	
+
+
+2) Cookie:-
+------------
+
+	Cookie--class
+
+		cookie<==key,value
+
+		response===>client===>cookie
+
+
+	admin	admin@123
+
+		if()
+		{
+			Cookie cookie = new Cookie("userName",userName);
+			response.addCookie(cookie);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3) Hidden form field
+----------------------
+	|
+  editstudent.jsp	
+	|
+	rno---readonly--hidden
+
+4) Query String
+------------------
+	|
+  liststudent.jsp
+	|
+    EDIT<%=EditStudentServlet?rno=%> | DELETE

@@ -121,4 +121,32 @@
     <servlet-name>LogoutByCookieServle</servlet-name>
     <url-pattern>/LogoutByCookieServle</url-pattern>
   </servlet-mapping>
+  <listener>
+    <listener-class>com.royal.listener.TestServletRequestListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.royal.listener.TestServletAttributeListener</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>AddFirstServlet</display-name>
+    <servlet-name>AddFirstServlet</servlet-name>
+    <servlet-class>com.royal.controller.AddFirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddFirstServlet</servlet-name>
+    <url-pattern>/AddFirstServlet</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.royal.listener.TestServletSessionListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.royal.listener.TestSessionAttributeListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.royal.listener.TestServletContextListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.royal.listener.TestServletContextAttributeListener</listener-class>
+  </listener>
 </web-app>
