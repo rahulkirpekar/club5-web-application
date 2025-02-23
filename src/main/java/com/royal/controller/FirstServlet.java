@@ -15,8 +15,9 @@ public class FirstServlet extends HttpServlet
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
-		PrintWriter out = response.getWriter();
+//		PrintWriter out = response.getWriter();
+//		out.println("<h1>FirstServlet :: Hello World</h1>");
 		
-		out.println("<h1>FirstServlet :: Hello World</h1>");
+		System.out.println("FirstServlet : service()");
 	}
 }
