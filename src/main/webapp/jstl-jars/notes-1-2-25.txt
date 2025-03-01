@@ -1,0 +1,109 @@
+Jsp:-
+-----
+	==> 9 implicit objects
+
+		1) request(HttpServletRequest)
+		2) response(HttpServletResponse)
+		3) application(ServletContext)
+		4) config(ServletConfig)
+		5) session(HttpSession)
+		6) page(Object)
+		7) PageContext
+
+			pageContext.setAttribute(key,value,REQUEST_SCOPE);
+		8) exception(Throwable)
+		9) out(JspWriter)	
+
+
+	==> 3 directive(page,include,taglib)
+
+
+	static===>include
+header.jsp
+footer.jsp
+
+		
+	
+
+<%@ include file="header.jsp" %>
+	test1.jsp			test2.jsp	test3.jsp
+<%@ include file="footer.jsp" %>		
+
+
+
+
+
+
+
+
+
+
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+
+jar---bind
+
+	jar--->add.jar---taglib
+
+//---
+
+	<c:add-two-nos/>
+
+		addition--two
+
+
+
+
+
+
+	==> 
+	==> JSTL:-- JSP Standard Tag Library
+
+
+
+
+	tags---[jar]
+	  |
+	java code---Java Developer
+		1 to 10
+
+
+	<onetoten/>
+
+	frontend---develper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,6 +5,7 @@
 </head>
 <body>
 
+	<%@ include file="header.jsp" %>
 		<form action="LoginServlet" method="post">
 		
 			<table>
@@ -22,7 +23,7 @@
 				</tr>
 
 			</table>
-		
 		</form>
+	<%@ include file="footer.jsp" %>
 </body>
 </html>

@@ -7,6 +7,10 @@
 <title>Student Registration</title>
 </head>
 <body>
+
+	<%@ include file="header.jsp" %>
+
+
 <%
 	UserBean userBean = (UserBean)session.getAttribute("userBean");
 	if(userBean == null)
@@ -41,5 +45,7 @@
 			</tr>
 		</table>
 	</form>
+	
+	<%@ include file="footer.jsp" %>
 </body>
 </html>

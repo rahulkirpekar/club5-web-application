@@ -7,6 +7,7 @@
 	<h2>Royal Techno</h2>
 	
 	<%
+			
 		for(int i = 1 ; i <= 10 ; i++)
 		{
 			out.print(5+" * " + i + " = " + (5*i)+"<br>");
